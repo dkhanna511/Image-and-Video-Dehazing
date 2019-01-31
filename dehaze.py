@@ -4,6 +4,10 @@ import numpy as np
 import sys
 
 def apply_mask(matrix, mask, fill_value):
+
+    #print(flat[60])
+    #print(flat[11940])
+        
     masked = np.ma.array(matrix, mask=mask, fill_value=fill_value)
     print('MASKED=',masked)
     return masked.filled()
