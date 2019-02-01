@@ -81,5 +81,3 @@ for i in filepaths:
 	cv2.imshow("After", out)
 	cv2.waitKey(0)'''
 	cv2.imwrite(directory+'\\Dehazed\\'+i.split('\\')[3].split('.')[0]+'_dehazed.jpg', out)
-
-#print(roo,'\n',roo1)
