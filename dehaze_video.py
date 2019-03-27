@@ -72,15 +72,16 @@ def simplest_cb(img, percent):
 
 if __name__ == '__main__':
     #img = cv2.imread(sys.argv[1])
-    cap=cv2.VideoCapture('/home/dheeraj/Downloads/Whale.mov')
-    #img = cv2.imread('/home/dheeraj/Downloads/Whale.mov')
-    while True:
-	ret, frame=cap.read()
-
-	out = simplest_cb(frame, 1)
-        cv2.imshow("Before", frame) 
-        cv2.imshow("After", out)
-        cv2.waitKey(0)
-    cap.release()
+	cap=cv2.VideoCapture('/media/dheeraj/9A26F0CB26F0AA01/WORK/github_repo/Dehazing/haze-videos/Whale.mov')
+   	#img = cv2.imread('/home/dheeraj/Downloads/Whale.mov')
+	while True:
+	
+		ret, frame=cap.read()
+	
+		out = simplest_cb(frame, 1)
+		cv2.imshow("Before", frame) 
+		cv2.imshow("After", out)
+		cv2.waitKey(0)
+	cap.release()
     cv2.destroyAllWindows()
 	
